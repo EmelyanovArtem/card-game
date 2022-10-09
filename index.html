@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <script defer>
+        (() => {
+            document.addEventListener('DOMContentLoaded', () => {
+                
+            })
+        }) ()
+    </script>
+</head>
+<body class="body">
+    <div class="content-container">
+        <a id="linkId" class="link" href="index.html">
+            <button class="link-btn">Сыграть ещё раз</button>
+        </a>
+        <h2>Правила ввода размера поля</h2>
+        <ul class="rule-list">
+            <li class="rule-list__item">Можно ввести число от 2 до 10</li>
+            <li class="rule-list__item">Число должно быть чётным</li>
+        </ul>
+        <p>Вы вводите значение, которое генерирует размер игрового поля. Число, которое вы введёте возведётся в квадрат.
+            Если вы ввелёте "2", то размер поля будет 4. В случае некоректного значения будет выведено поле размером 4*4 (16 карт).
+        </p>
+        <form id="form-size" action="">
+            <input id="input-size" placeholder="Кол-во карточек по вертикали/горизонтали" type="number">
+            <input id="btn-size" type="submit">
+        </form>
+    </div>
+    <p id="timer-text"></p>
+</body>
+</html>
